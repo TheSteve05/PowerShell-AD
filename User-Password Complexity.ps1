@@ -1,0 +1,1 @@
+Get-Aduser -Filter * -Properties * | Select *Password*

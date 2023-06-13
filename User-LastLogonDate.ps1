@@ -1,0 +1,1 @@
+get-ADUser -Filter 'enabled -eq $true' -Properties "LastLogonDate" | select name, LastLogonDate, DistinguishedName | Sort-Object -Property LastLogonDate

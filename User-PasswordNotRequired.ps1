@@ -1,0 +1,1 @@
+Get-ADUser -Filter * | Set-ADUser -PasswordNotRequired $true

@@ -1,0 +1,1 @@
+Search-ADAccount -Locked | Select Name, LockedOut, LastLogonDate

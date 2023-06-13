@@ -1,0 +1,1 @@
+Get-ADUser -filter { (PasswordNeverExpires -eq $true) -and (enabled -eq $true)} -Properties PasswordNeverExpires, LastLogonDate | select name, PasswordNeverExpires, LastLogonDate, DistinguishedName | Sort-Object -Property LastLogonDate
